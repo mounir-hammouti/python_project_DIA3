@@ -3,7 +3,7 @@
 
 [1 - Prerequisite](#prerequisite)  
 [2 - Installation](#installation)  
-[3 - Launch the application](#start)
+[3 - Launch the application](#start)  
 [4 - Architecture](#architecture) 
 
 
