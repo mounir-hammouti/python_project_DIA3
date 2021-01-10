@@ -12,23 +12,28 @@
 Check that your python version is up to date and to clone the project use this command:
 
 ```
-git clone https://github.com/mounir-hammouti/python_project_DIA3
+git clone https://github.com/mounir-hammouti/python_project_DIA3.git
 ```
 
 It is better to create a virtual environment for the project, so you will not encounter versioning problems. First, go into the directory where you have the project folder then:
 
 ```
-cd /path/to/project
+cd /path/to/python_project_DIA3
 python3 -m venv .
 .\Scripts\activate.bat.
 ```
 If you are using powershell, use this command instead :
 ```
-cd /path/to/new/project
+cd /path/to/python_project_DIA3
 python3 -m venv .
 . .\Scripts\Activate.ps1
 ```
-
+For MAC users :
+```
+cd /path/to/new/python_project_DIA3
+python3 -m venv .
+. bin/activate
+```
 
 Note to disable the environment, use this command :
 ```
