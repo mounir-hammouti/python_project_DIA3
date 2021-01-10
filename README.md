@@ -15,22 +15,22 @@ Check that your python version is up to date and to clone the project use this c
 git clone https://github.com/mounir-hammouti/python_project_DIA3.git
 ```
 
-It is better to create a virtual environment for the project, so you will not encounter versioning problems. First, go into the directory where you have the project folder then:
+It is better to create a virtual environment for the project, so you will not encounter versioning problems. First, go into the directory where you have cloned the repository then:
 
 ```
-cd /path/to/python_project_DIA3
+cd python_project_DIA3
 python3 -m venv .
 .\Scripts\activate.bat.
 ```
 If you are using powershell, use this command instead :
 ```
-cd /path/to/python_project_DIA3
+cd python_project_DIA3
 python3 -m venv .
 . .\Scripts\Activate.ps1
 ```
 For MAC users :
 ```
-cd /path/to/python_project_DIA3
+cd python_project_DIA3
 python3 -m venv .
 . bin/activate
 ```
@@ -62,8 +62,9 @@ Please note that we have decided to install only exact versions of the libraries
 python3 app.py
 ```
 
-This command launches the app.py file that starts a server on `http://localhost:5000`. Each change on this file leads to a new compilation and a page update in the browser
+This command launches the app.py file that starts a server on `http://localhost:5000`. Each change on this file leads to a new compilation and a page update in the browser. Open your browser with this url and you will have access to the Page Block Classification API.
 
+If you are struggling with the launch of the app, maybe use conda instead of your command prompt and launch again the above command.
 
 ## <a name="architecture"></a>4 - Architecture
 
