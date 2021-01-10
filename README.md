@@ -30,7 +30,7 @@ python3 -m venv .
 ```
 For MAC users :
 ```
-cd /path/to/new/python_project_DIA3
+cd /path/to/python_project_DIA3
 python3 -m venv .
 . bin/activate
 ```
