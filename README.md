@@ -1,5 +1,5 @@
-# python_project_DIA3
-# Python for Data Analysis Project - Mounir HAMMOUTI, Lies HAOUAS - ESILV DIA3 2020/2021
+# Python for Data Analysis Project
+# Page Block Classification
 
 [1 - Prerequisite](#prerequisite)  
 [2 - Installation](#installation)  
@@ -64,4 +64,4 @@ This command launches the app.py file that starts a server on `http://localhost:
 
 The project is composed of 3 main folders, the folder <b>Templates<b> for displaying the pages, the folder <b>static</b> which contains the css files for stylizing the web pages and the folder <b>model</b> which contains the prediction and the notebook file. 
 
-![logo](https://github.com/mounir-hammouti/python_project_DIA3/images/predictPage.PNG)
+![logo](https://github.com/mounir-hammouti/python_project_DIA3/images/predictPage.png)
