@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Predict page block</title>
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<script>
+function validateForm() {
+  var validate = true;
+  var fields =["height","length","blackpix","blackand","wb_trans"];
+  fields.map(element => {
+    var x = document.forms["form"][element].value;
+    var number = Number(x);
+    if(isNaN(number)){
+      validate = false;
+      alert(`${element} must be a number`);
+    }
+  })
+  return validate;
+}
+</script>
+
+<body>
+ <div id="prediction">
+	<h1>Page block forecasting</h1>
+
+     
+    <form id="form" name="form" onsubmit="return validateForm()" action="{{ url_for('predict')}}" method="post">
+    	  <input type="text" name="height" placeholder="Height of the block (between 0 and 800)" required="required" />
+        <input type="text" name="length" placeholder="Length of the block (between 0 and 600)" required="required" />
+        <input type="text" name="blackpix" placeholder="Total number of black pixels in the original bitmap of the block (between 0 and 35000)" required="required" />
+    		<input type="text" name="blackand" placeholder="Total number of black pixels in the bitmap of the block after the RLSA (between 0 and 50000)" required="required" />
+    		<input type="text" name="wb_trans" placeholder="Number of white-black transitions in the original bitmap of the block (between 0 and 3500)" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict the type of the page block</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+</body>
+</html>
